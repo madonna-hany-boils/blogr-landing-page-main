@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Frontend Mentor | [Blogr]</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+   <header>
+    <div class="header">
+      <div class="navbar container">
+<div class="logo">
+  <img src="./images/logo.svg" alt="">
+</div>
+      
+<div class="menu">
+  <div>
+    <ul class="navbar navSmall">
+      <li class="product navSmall" onclick="showDropList(event,'ProductList',1) ">
+        Product
+        <img src="./images/icon-arrow-light.svg" alt="" class="arrow" />
+        <div class="ProductList">
+          <ul>
+            <li>
+              <a href="">Overview</a>
+            </li>
+            <li>
+              <a href="">Pricing</a>
+            </li>
+            <li>
+              <a href="">Marketplace</a>
+            </li>
+            <li>
+              <a href="">Features</a>
+            </li>
+            <li>
+              <a href="">Integrations</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li onclick="showDropList(event,'CompanyList',2) "class="navSmall">
+        Company <img src="./images/icon-arrow-light.svg" alt="" class="arrow"/>
+        <div class="CompanyList">
+          <ul>
+            <li>
+              <a href="">About</a>
+            </li>
+            <li>
+              <a href="">Team</a>
+            </li>
+            <li>
+              <a href="">Blog</a>
+            </li>
+            <li>
+              <a href="">Careers</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="navSmall" onclick="showDropList(event,'ConnectList',3)">
+        Connect <img src="./images/icon-arrow-light.svg" alt=""class="arrow" />
+        <div class="ConnectList">
+          <ul>
+            <li>
+              <a href="">Contact</a>
+            </li>
+            <li>
+              <a href="">Newsletter</a>
+            </li>
+            <li>
+              <a href="">LinkedIn</a>
+            </li>
+            <li>
+              <a href="">Careers</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+     
+    </ul>
+  
+  </div>
+  <div class="register navSmall">
+    <button class="btnlogin"><a href="">Login</a></button>
+    <button class="btn1"><a href="">SignUp</a> </button>
+  </div>
+  <div class="smallMenu"><img src="./images/icon-hamburger.svg" alt="" onclick="ShowMenu()" id="image"></div>
+
+</div>
+      </div>
+      <div class="headertext">
+        <h1>A modern publishing platform</h1>
+        <p>Grow your audience and build your online brand</p>
+        <div>
+          <button class="btn1">Start for Free</button>
+          <button class="btn2">Learn More</button>
+        </div>
+      </div>
+    </div>
+  <!-- //       -->
+
+<div style="    width: 80%;
+    margin: auto;">
+  <div 
+class="hiddenMenu " >
+
+  <div>
+    <ul class=" ">
+      <li class="product " onclick="showProduct()">
+        Product
+        <img src="./images/icon-arrow-dark.svg" alt="" class="arrow1 " />
+        <div class="ProductList1">
+          <ul>
+            <li>
+              <a href="">Overview</a>
+            </li>
+            <li>
+              <a href="">Pricing</a>
+            </li>
+            <li>
+              <a href="">Marketplace</a>
+            </li>
+            <li>
+              <a href="">Features</a>
+            </li>
+            <li>
+              <a href="">Integrations</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li onclick="showCompany() ">
+        Company <img src="./images/icon-arrow-dark.svg" alt="" class="arrow2"/>
+        <div class="CompanyList1">
+          <ul>
+            <li>
+              <a href="">About</a>
+            </li>
+            <li>
+              <a href="">Team</a>
+            </li>
+            <li>
+              <a href="">Blog</a>
+            </li>
+            <li>
+              <a href="">Careers</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="" onclick="showConnect()">
+        Connect <img src="./images/icon-arrow-dark.svg" alt="" class="arrow3" />
+        <div class="ConnectList1">
+          <ul>
+            <li>
+              <a href="">Contact</a>
+            </li>
+            <li>
+              <a href="">Newsletter</a>
+            </li>
+            <li>
+              <a href="">LinkedIn</a>
+            </li>
+            <li>
+              <a href="">Careers</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+     
+    </ul>
+  
+  </div>
+  <hr style="    width: 80%;
+    margin-inline: auto; margin-block: 70px;">
+  <div class="register ">
+    <button class="btnlogin" style="border: none; color: hsl(208, 49%, 24%);font-size: 25px;"><a href="">Login</a></button>
+    <button class="" style="width: 150px;height: 40px;background-color: hsl(359.25deg 100% 68.43%);border: none;border-radius: 50px;"><a href="" style="color: white;">SignUp</a> </button>
+  </div>
+</div>
+</div>
+   </header>
+
+    <section >
+      <div class="section2" style="overflow: hidden;">
+        <h1>
+          Designed for the future
+        </h1>
+        <div class="sec2">
+       <div style="display: flex;flex-direction: column;      padding-top: 10%;
+    width: 90%;" class="text">
+    
+        <div class="text1">
+          <h2>
+            Introducing an extensible editor
+          </h2>
+          <p>
+            Blogr features an
+            exceedingly intuitive interface which lets you focus on one thing: creating
+            content. The editor supports management of multiple blogs and allows easy
+            manipulation of embeds such as images, videos, and Markdown. Extensibility
+            with plugins and themes provide easy ways to add functionality or change the
+            looks of a blog.
+          </p>
+                  </div>
+                  <div class="text2">
+                    <h2>Robust content management </h2>
+                    <p>
+                      Flexible content management
+                      enables users to easily move through posts. Increase the usability of your
+                      blog by adding customized categories, sections, format, or flow. With this
+                      functionality, you’re in full control.
+                    </p>
+                  </div>
+      </div>
+    <!-- </div> -->
+        <div class="sec2Img">
+          <img src="./images/illustration-editor-desktop.svg" alt="">
+        </div></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section3 ">
+      
+      <div class=" container sec3">
+        <div><img src="./images/illustration-phones.svg" alt=""></div>
+        <div style="  
+           ">
+          <h2> State of the Art Infrastructure </h2>
+          <p>With   reliability and speed in mind, worldwide data centers provide the backbone
+            for ultra-fast connectivity. This ensures your site will load instantly, no
+            matter where your readers are, keeping your site competitive. </p>
+        </div>
+      </div>
+    </div>
+     </div>
+    </section>
+    <section class="section4">
+      <div class="section4">
+        <div class="sec4Img">
+          <img src="./images/illustration-laptop-desktop.svg" alt="">
+        </div>
+<div class="text">
+  <div style="margin-block: 30px;">
+    <h2> Free, open,
+      simple</h2>
+      <p>
+        Blogr is a free and open source application backed by a large
+    community of helpful developers.
+  It supports features such as code syntax
+    highlighting, RSS feeds, social media integration, third-party commenting
+    tools, and works seamlessly with Google Analytics. The architecture is clean
+    and is relatively easy to learn.
+      </p>
+  </div>
+  <div>
+    <h2> Powerful tooling  </h2>
+    <p> Batteries included. We
+      built a simple and straightforward CLI tool that makes customization and
+      deployment a breeze, but capable of producing even the most complicated
+      sites. 
+     </p>
+  </div>
+</div>
+   <!-- //   </div> -->
+    </section>
+   <footer>
+    <div class="footer container">
+    
+    <div >
+      <img src="./images/logo.svg" alt="">
+          </div>
+          <div>
+                  
+       
+  
+        <h4>Product</h4>   
+        <br>   
+      <ul>
+        
+        <li>Overview</li>
+        <li>Pricing</li>
+        <li>Marketplace</li>
+        <li>Features</li>
+        <li>Integrations</li>
+      </ul>
+          </div>
+          <div>
+            <h4>Company</h4>      
+            <br>
+
+            <ul>
+        <li>
+          About
+        </li>
+      <li>Team</li>
+      <li>Blog</li>
+      <li>Careers</li>
+      </ul></div>
+      <div>
+        <h4>Connect</h4>
+        <br>
+        <ul>
+        
+      <li>Contact</li>
+      <li>Newsletter</li>
+      <li>LinkedIn</li>
+      </ul></div>
+   </div>
+   </footer>
+    <script src="./script.js"></script>
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Madonna Hany Boils </a>.
+  </div> -->
+  </body>
+</html>

@@ -1,0 +1,381 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  /* color: white;  */
+  font-family: "Montserrat", serif;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+a{
+  color: white;
+}
+.menu{
+  display: flex
+;
+    align-items: center;
+    gap: 500px
+}
+.hiddenMenu ul, .hiddenMenu .register{
+  text-align: center;
+  display: flex
+;
+  flex-direction: column;
+  gap: 30px;
+  font-weight: 800;
+
+}
+.register{
+  display: flex
+  ;
+      align-items: center;
+}
+.hiddenMenu{
+  display: none;
+  background-color:  hsl(0, 0%, 100%);;
+  flex-direction: column;
+  position: absolute;
+  z-index: 99;
+  width: 80%;
+  top: 100px;
+  height: auto;
+  margin-bottom: 30px;
+  color: hsl(208, 49%, 24%);
+  border-radius: 5px;
+
+  
+}
+.ProductList1,
+.CompanyList1,
+.ConnectList1{
+  display: none;
+}
+.drop{
+  display: flex
+  ;
+      justify-content: center;
+      background-color: hsl(240deg 2% 78% / 35%);;
+      width: 70%;
+      margin: auto;
+      border-radius: 5px;
+      padding: 10px;
+}
+
+.rotate{
+  rotate: 180deg;
+}
+.hiddenMenu ul{
+  list-style: none;
+  gap: 50px;
+
+}
+.hiddenMenu a{
+  color: hsl(205, 46%, 31%)
+
+}
+.hiddenMenu a:hover{
+  color: hsl(206, 96%, 18%);
+  text-decoration: underline;
+  
+
+}
+.ProductList,
+.CompanyList,
+.ConnectList {
+  display: none;
+}
+.smallDivces{
+  display: none;
+}
+.btn1 a {
+  color: hsl(359.25deg 100% 68.43%);
+}
+.btn1 a:hover {
+  color: aliceblue;
+  background-color: hsl(359.25deg 100% 78.43%);
+}
+/* header style */
+header {
+  background-color: hsl(356, 100%, 66%);
+  color: white;
+  border-bottom-left-radius: 85px;
+}
+li:hover {
+  cursor: pointer;
+}
+nav {
+  display: flex;
+  justify-content: space-between;    align-items: baseline;
+}
+nav a {
+  color: white;
+}
+.navbar {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 25px;
+  padding-block: 30px;
+  justify-content: space-between;
+}
+.navbar button {
+  height: 40px;
+  width: 110px;
+  border-radius: 50px;
+  border: none;
+  font-weight: 600;
+}
+.btnlogin {
+  background-color: transparent;
+}
+.headertext {
+  text-align: center;
+  padding-block: 50px;
+}
+.headertext p {
+  color: hsl(0, 0%, 100%);
+}
+.smallMenu{
+  display: none;
+}
+.header {
+  background-image: url(./images/bg-pattern-intro-desktop.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  height: 500px;
+  background-position: center;
+  background-blend-mode: color-burn;
+  border-bottom-left-radius: 85px;
+}
+.headertext button {
+  height: 40px;
+  width: 110px;
+  border-radius: 50px;
+}
+/* .product:hover{ */
+.dropdown {
+  display: block;
+  height: auto;
+  width: 150px;
+  background-color: aliceblue;
+  position: absolute;
+  z-index: 99;
+  border-radius: 5px;
+  padding: 20px;
+}
+.dropdown ul {
+  list-style: none;
+}
+.dropdown li {
+  margin-block: 5px;
+}
+.dropdown a {
+  color: rgba(0, 0, 0, 0.686);
+}
+.dropdown a:hover {
+  color: rgba(0, 0, 0, 0.99);
+  font-weight: 600;
+}
+
+.btn1 {
+  color: hsl(359.25deg 100% 68.43%);
+  border: none;
+  background-color: white;
+}
+.btn1:hover {
+  color: white;
+  background-color: hsl(359.25deg 100% 78.43%);
+  /* border: 1px solid white; */
+}
+.btn2 {
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+}
+.btn2:hover {
+  color: hsl(359.25deg 100% 68.43%);
+  background-color: white;
+}
+.headertext p
+{
+  margin-block: 30px;
+}
+/* section 2 */
+.sec2 {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.text {
+  color: hsl(208, 49%, 24%);
+  width: 50%;
+  margin-left: 10%;
+}
+.sec2Img {
+  width: 50%;
+}
+.sec2Img img {
+  height: 700px;
+  position: relative;
+  right: -170px;
+}
+.section2 h1 {
+  color: hsl(208, 49%, 24%);
+  text-align: center;
+  margin-top: 50px;
+}
+
+.section3{
+   
+    background-color:  hsl(237, 17%, 21%);
+    height: 400px;
+border-bottom-left-radius: 100px;
+border-top-right-radius: 100px;
+background-image: url(./images/bg-pattern-circles.svg);
+background-repeat: no-repeat;
+background-size: auto;
+background-position: -45% 88%;
+margin-block: 50px;
+}
+.background{
+ 
+}
+.sec3{
+    display: flex;
+    /* align-items: center; */
+    color: white;
+    flex-direction: row;
+    justify-content: center;
+}
+.section3 img{
+    position: relative;
+    top: -90px;
+}
+.section4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block: 30px;
+
+}
+.section4 .text{
+  width: 50%;
+  margin-right: 10%;
+}
+.section4 img{
+  margin-left: -300px;
+}
+footer{
+    background-color:  hsl(240, 10%, 16%);
+    /* height: 250px; */
+border-top-right-radius: 100px;
+
+}
+.footer{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.footer ul{
+    list-style: none;
+}
+.footer ul li{
+  color: hsl(240, 2%, 79%);
+}
+
+.footer ul li:hover{
+/* //border-bottom: 2px solid white; */
+text-decoration: underline;
+text-decoration-color: white;
+
+}
+/* media query */
+@media (max-width: 1360px) {
+  .menu{
+    gap: 50px;
+  }
+}
+@media (max-width: 760px) {
+  .header {
+    background-image: url(./images/bg-pattern-intro-mobile.svg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    height: 500px;
+    background-position: center;
+    background-blend-mode: color-burn;
+  }
+  .sec2{
+flex-direction: column-reverse;
+margin-bottom: 50px;
+  }
+  .sec3,.section4{
+    flex-direction: column;
+  }
+  .sec4Img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .sec2Img{width: 100%;}
+  .sec2Img img{
+    height: auto;
+    position: initial;
+    width: 100%;
+    right: inherit;
+  }
+  .section4 img{
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    /* image-orientation: flip; */
+
+  }
+  .sec2{
+    margin-block: 50px;
+  }
+  .sec3 img{
+    width: 100%;
+    top: -100px;
+  }
+  .section3{
+    height: 550px;
+    background-position: 53% 110%;
+
+  }
+  .section4 .text{
+    margin: 50px;
+  }
+ 
+  .navSmall{
+    display: none;
+  }
+  .show{
+    display: flex;
+    padding: 50px;
+ 
+
+  }
+ 
+  .smallMenu{
+    display: block;
+  }
+
+  .smallDivces{
+    display: flex
+    ;
+            width: 100%;
+            justify-content: space-between;
+  }
+  .footer{
+    flex-direction: column;
+    align-items: center;
+  }
+  .section4 .text,.text,.sec2 .text{
+    text-align: center;
+    width: 100%;
+  }
+}

@@ -1,0 +1,89 @@
+ <header class=" header">
+      <div class=" header">
+        <nav class="container">
+         
+        <div><img src="./images/logo.svg" alt="" /></div>
+
+          <ul class="navbar navSmall">
+            <li class="product navSmall" onclick="showMenu(event,'ProductList') ">
+              Product
+              <img src="./images/icon-arrow-light.svg" alt="" class="arrow" />
+              <div class="ProductList">
+                <ul>
+                  <li>
+                    <a href="">Overview</a>
+                  </li>
+                  <li>
+                    <a href="">Pricing</a>
+                  </li>
+                  <li>
+                    <a href="">Marketplace</a>
+                  </li>
+                  <li>
+                    <a href="">Features</a>
+                  </li>
+                  <li>
+                    <a href="">Integrations</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li onclick="showMenu(event,'CompanyList') "class="navSmall">
+              Company <img src="./images/icon-arrow-light.svg" alt="" />
+              <div class="CompanyList">
+                <ul>
+                  <li>
+                    <a href="">About</a>
+                  </li>
+                  <li>
+                    <a href="">Team</a>
+                  </li>
+                  <li>
+                    <a href="">Blog</a>
+                  </li>
+                  <li>
+                    <a href="">Careers</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="navSmall" onclick="showMenu(event,'ConnectList')">
+              Connect <img src="./images/icon-arrow-light.svg" alt="" />
+              <div class="ConnectList">
+                <ul>
+                  <li>
+                    <a href="">Contact</a>
+                  </li>
+                  <li>
+                    <a href="">Newsletter</a>
+                  </li>
+                  <li>
+                    <a href="">LinkedIn</a>
+                  </li>
+                  <li>
+                    <a href="">Careers</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+           
+          </ul>
+          <div class="register navSmall">
+            <button class="btnlogin"><a href="">Login</a></button>
+            <button class="btn1"><a href="">SignUp</a> </button>
+          </div>
+          <div class="smallDivces">  
+            <!-- <div><img src="./images/logo.svg" alt="" /></div> -->
+            <div class="smallMenu"><img src="./images/icon-hamburger.svg" alt="" onclick="ShowMenu()" id="image"></div>
+          </div>
+        </nav>
+        <div class="headertext">
+          <h1>A modern publishing platform</h1>
+          <p>Grow your audience and build your online brand</p>
+          <div>
+            <button class="btn1">Start for Free</button>
+            <button class="btn2">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </header>
