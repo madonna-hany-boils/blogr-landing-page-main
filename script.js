@@ -1,23 +1,5 @@
 
 
-        // function showDropList(event, menuClass,i) {
-        //     event.preventDefault(); // Prevent <a> default behavior
-        //     const dropdown = document.querySelector(`.${menuClass}`);
-
-        //     const allDropdowns = document.querySelectorAll('.dropdown');
-        //     allDropdowns.forEach(list => {
-        //         if (list.classList.contains('dropdown')) {
-        //             list.classList.remove('dropdown');
-        //         }
-        //         else{
-        //           list.classList.add('dropdown');
-        //         }
-        //     });
-        //     dropdown.classList.toggle("dropdown");
-        //   document.getElementsByClassName("arrow")[i-1].classList.toggle("rotate")
-
-        //   }
-
         function showDropList(event, menuClass, i) {
           event.preventDefault();
       
